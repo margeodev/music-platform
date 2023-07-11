@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SideNavToggle } from './core/components/sidenav/sidenav.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'music-platform';
+
+  collapsed = true;
+  screenWidth = 0;
+
+  onToggleSideNav(data: SideNavToggle): void {
+    this.screenWidth = data.screenWidth;
+    this.collapsed = data.collapsed;
+  }
 }

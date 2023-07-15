@@ -1,7 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { navbarData } from './nav-data';
-import { SideNavToggle } from './sidenav.model';
-
+import { SideNavToggle } from '../model/sidenav.model';
+import { navbarData } from '../model/nav-data';
 @Component({
   selector: 'app-sidenav',
   templateUrl: './sidenav.component.html',

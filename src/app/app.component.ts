@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SideNavToggle } from './core/components/sidenav/sidenav.model';
+import { SideNavToggle } from './core/components/sidenav/model/sidenav.model';
 
 @Component({
   selector: 'app-root',

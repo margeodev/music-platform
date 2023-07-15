@@ -2,13 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { RouterModule } from '@angular/router';
+import { SidenavComponent } from './components/sidenav/component/sidenav.component';
+import { BodyComponent } from '../pages/body/component/body.component';
 
 
 @NgModule({
   declarations: [
-    SidenavComponent
+    SidenavComponent,
+    BodyComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +19,8 @@ import { RouterModule } from '@angular/router';
     RouterModule
   ],
   exports: [
-    SidenavComponent
+    SidenavComponent,
+    BodyComponent
   ]
 })
 export class CoreModule { }
